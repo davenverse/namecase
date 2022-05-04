@@ -10,6 +10,14 @@ class NameCaseSpec extends FunSuite {
     assertEquals(nameCase("LEIGH-WILLIAMS"), "Leigh-Williams") 
   }
 
+  test("Should ignore mixed-case"){
+    assertEquals(nameCase("Chris DAvenport"), "Chris DAvenport")
+  }
+
+  test("Should fix mixed-case when ignoreIfMixed is false"){
+    assertEquals(nameCase("Chris DAvenport", ignoreIfMixed = false), "Chris Davenport")
+  }
+
   test("Should case irish correctly"){
     assertEquals(nameCase("MCCARTHY"), "McCarthy")
     // Exception 

@@ -31,4 +31,7 @@ nameCase("RON BEN ISRAEL")
 
 // Post Nominals
 nameCase("SHAQUILLE O'NEAL PHD")
+
+// Ignores Mixed Case
+nameCase("Chris DAvenport")
 ```
