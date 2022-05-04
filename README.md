@@ -38,3 +38,4 @@ Typescript version:
 Scala version:
 
     Copyright © Christopher Davenport
+
