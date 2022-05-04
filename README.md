@@ -1,6 +1,6 @@
 # namecase - Fix Capitalization of Peoples Names [![Maven Central](https://maven-badges.herokuapp.com/maven-central/io.chrisdavenport/namecase_2.13/badge.svg)](https://maven-badges.herokuapp.com/maven-central/io.chrisdavenport/namecase_2.13) ![Code of Conduct](https://img.shields.io/badge/Code%20of%20Conduct-Scala-blue.svg)
 
-## [Head on over to the microsite](https://ChristopherDavenport.github.io/namecase)
+## [Head on over to the microsite](https://davenverse.github.io/namecase)
 
 ## Quick Start
 
