@@ -20,14 +20,20 @@ nameCase("LEIGH-WILLIAMS")
 nameCase("MCCARTHY")
 nameCase("O'CALLAGHAN")
 
-// Joiners
-nameCase("VAN DYKE")
+// Special Cases
+nameCase("AP LLWYD DAFYDD")
+nameCase("DICK VAN DYKE")
+nameCase("guillermo del toro")
+// But not surname forms
+nameCase("VAN WILDER")
 
 // Spanish
 nameCase("RUIZ Y PICASSO")
 
 // Hebrew
 nameCase("RON BEN ISRAEL")
+// But not surname forms
+nameCase("BEN ROETHLSBERGER")
 
 // Post Nominals
 nameCase("SHAQUILLE O'NEAL PHD")
