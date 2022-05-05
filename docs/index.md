@@ -24,7 +24,7 @@ nameCase("O'CALLAGHAN")
 nameCase("AP LLWYD DAFYDD")
 nameCase("guillermo del toro")
 nameCase("DICK VAN DYKE")
-// But not surname forms
+// But not given name forms
 nameCase("VAN WILDER")
 
 // Spanish
@@ -32,7 +32,7 @@ nameCase("RUIZ Y PICASSO")
 
 // Hebrew
 nameCase("RON BEN ISRAEL")
-// But not surname forms
+// But not given name forms
 nameCase("BEN ROETHLISBERGER")
 
 // Post Nominals
