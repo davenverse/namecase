@@ -1,7 +1,7 @@
 # namecase - Fix Capitalization of Peoples Names [![Maven Central](https://maven-badges.herokuapp.com/maven-central/io.chrisdavenport/namecase_2.13/badge.svg)](https://maven-badges.herokuapp.com/maven-central/io.chrisdavenport/namecase_2.13)
 ## Quick Start
 
-To use namecase in an existing SBT project with Scala 2.11 or a later version, add the following dependencies to your
+To use namecase in an existing SBT project with Scala 2.12 or a later version, add the following dependencies to your
 `build.sbt` depending on your needs:
 
 ```scala
