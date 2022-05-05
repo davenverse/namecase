@@ -111,10 +111,10 @@
 </span><span class="comment">// Special Cases
 </span><span class="identifier">nameCase</span><span>(</span><span class="string-literal">&quot;AP LLWYD DAFYDD&quot;</span><span>)
 </span><span class="comment">// res4: String = &quot;ap Llwyd Dafydd&quot;
-</span><span class="identifier">nameCase</span><span>(</span><span class="string-literal">&quot;DICK VAN DYKE&quot;</span><span>)
-</span><span class="comment">// res5: String = &quot;Dick van Dyke&quot;
 </span><span class="identifier">nameCase</span><span>(</span><span class="string-literal">&quot;guillermo del toro&quot;</span><span>)
-</span><span class="comment">// res6: String = &quot;Guillermo del Toro&quot;
+</span><span class="comment">// res5: String = &quot;Guillermo del Toro&quot;
+</span><span class="identifier">nameCase</span><span>(</span><span class="string-literal">&quot;DICK VAN DYKE&quot;</span><span>)
+</span><span class="comment">// res6: String = &quot;Dick van Dyke&quot;
 // But not surname forms
 </span><span class="identifier">nameCase</span><span>(</span><span class="string-literal">&quot;VAN WILDER&quot;</span><span>)
 </span><span class="comment">// res7: String = &quot;Van Wilder&quot;
@@ -127,16 +127,19 @@
 </span><span class="identifier">nameCase</span><span>(</span><span class="string-literal">&quot;RON BEN ISRAEL&quot;</span><span>)
 </span><span class="comment">// res9: String = &quot;Ron ben Israel&quot;
 // But not surname forms
-</span><span class="identifier">nameCase</span><span>(</span><span class="string-literal">&quot;BEN ROETHLSBERGER&quot;</span><span>)
-</span><span class="comment">// res10: String = &quot;Ben Roethlsberger&quot;
+</span><span class="identifier">nameCase</span><span>(</span><span class="string-literal">&quot;BEN ROETHLISBERGER&quot;</span><span>)
+</span><span class="comment">// res10: String = &quot;Ben Roethlisberger&quot;
 </span><span>
 </span><span class="comment">// Post Nominals
 </span><span class="identifier">nameCase</span><span>(</span><span class="string-literal">&quot;SHAQUILLE O&#39;NEAL PHD&quot;</span><span>)
 </span><span class="comment">// res11: String = &quot;Shaquille O&#39;Neal PhD&quot;
 </span><span>
 </span><span class="comment">// Ignores Mixed Case
-</span><span class="identifier">nameCase</span><span>(</span><span class="string-literal">&quot;Chris DAvenport&quot;</span><span>)
-</span><span class="comment">// res12: String = &quot;Chris DAvenport&quot;</span></code></pre>
+</span><span class="identifier">nameCase</span><span>(</span><span class="string-literal">&quot;Chris DAVenport&quot;</span><span>)
+</span><span class="comment">// res12: String = &quot;Chris DAVenport&quot;
+// Applies if additional flag set
+</span><span class="identifier">nameCase</span><span>(</span><span class="string-literal">&quot;Chris DAVenport&quot;</span><span>, </span><span class="identifier">ignoreIfMixed</span><span> = </span><span class="boolean-literal">false</span><span>)
+</span><span class="comment">// res13: String = &quot;Chris Davenport&quot;</span></code></pre>
 
         <hr style="margin-top: 30px"/>
         <footer style="font-size: 90%; text-align: center">
