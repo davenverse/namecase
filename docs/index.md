@@ -29,6 +29,7 @@ nameCase("VAN WILDER")
 
 // Spanish
 nameCase("RUIZ Y PICASSO")
+nameCase("FRANCISCO GOMEZ DE QUEVEDO VILLEGAS Y SANTIBANEZ")
 
 // Hebrew
 nameCase("RON BEN ISRAEL")
