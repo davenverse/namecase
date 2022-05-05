@@ -22,8 +22,8 @@ nameCase("O'CALLAGHAN")
 
 // Special Cases
 nameCase("AP LLWYD DAFYDD")
-nameCase("DICK VAN DYKE")
 nameCase("guillermo del toro")
+nameCase("DICK VAN DYKE")
 // But not surname forms
 nameCase("VAN WILDER")
 
@@ -33,11 +33,13 @@ nameCase("RUIZ Y PICASSO")
 // Hebrew
 nameCase("RON BEN ISRAEL")
 // But not surname forms
-nameCase("BEN ROETHLSBERGER")
+nameCase("BEN ROETHLISBERGER")
 
 // Post Nominals
 nameCase("SHAQUILLE O'NEAL PHD")
 
 // Ignores Mixed Case
-nameCase("Chris DAvenport")
+nameCase("Chris DAVenport")
+// Applies if additional flag set
+nameCase("Chris DAVenport", ignoreIfMixed = false)
 ```
