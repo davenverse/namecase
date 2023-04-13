@@ -26,7 +26,7 @@ lazy val core = crossProject(JVMPlatform, JSPlatform)
   .settings(
     name := "namecase",
     libraryDependencies ++= Seq(
-      "org.scalameta" %% "munit" % "1.0.0-M1" % Test
+      "org.scalameta" %% "munit" % "1.0.0-M7" % Test
     )
   ).jsSettings(
     scalaJSLinkerConfig ~= { _.withModuleKind(ModuleKind.CommonJSModule)},
