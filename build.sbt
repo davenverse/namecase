@@ -7,11 +7,10 @@ ThisBuild / developers := List(
   tlGitHubDev("christopherdavenport", "Christopher Davenport")
 )
 ThisBuild / tlCiReleaseBranches := Seq("main")
-ThisBuild / tlSonatypeUseLegacyHost := true
 
-val Scala213 = "2.13.7"
+val Scala213 = "2.13.18"
 
-ThisBuild / crossScalaVersions := Seq("2.12.15", Scala213, "3.1.2")
+ThisBuild / crossScalaVersions := Seq("2.12.15", Scala213, "3.3.8")
 ThisBuild / scalaVersion := Scala213
 
 ThisBuild / testFrameworks += new TestFramework("munit.Framework")
@@ -34,4 +33,11 @@ lazy val core = crossProject(JVMPlatform, JSPlatform)
 
 lazy val site = project.in(file("site"))
   .enablePlugins(TypelevelSitePlugin)
+  .settings(
+    laikaTheme := tlSiteHelium.value.site
+      .topNavigationBar(
+        homeLink = laika.helium.config.IconLink.internal(laika.ast.Path.Root / "index.md", laika.helium.config.HeliumIcon.home)
+      )
+      .build
+  )
   .dependsOn(core.jvm)
