@@ -10,7 +10,7 @@ ThisBuild / tlCiReleaseBranches := Seq()
 
 val Scala213 = "2.13.18"
 
-ThisBuild / crossScalaVersions := Seq("2.12.15", Scala213, "3.3.8")
+ThisBuild / crossScalaVersions := Seq(Scala213, "3.3.8")
 ThisBuild / scalaVersion := Scala213
 
 ThisBuild / testFrameworks += new TestFramework("munit.Framework")
@@ -25,7 +25,7 @@ lazy val core = crossProject(JVMPlatform, JSPlatform)
   .settings(
     name := "namecase",
     libraryDependencies ++= Seq(
-      "org.scalameta" %% "munit" % "1.0.0-M1" % Test
+      "org.scalameta" %% "munit" % "1.3.1" % Test
     )
   ).jsSettings(
     scalaJSLinkerConfig ~= { _.withModuleKind(ModuleKind.CommonJSModule)},
